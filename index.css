@@ -8,12 +8,12 @@ input
     display: none;
 }
 
-input:checked + section label
+input:checked + article label
 {
     background: url('horizontal.png');
 }
 
-input:checked ~ section article .catsCard
+input:checked ~ article section .cat-card
 {
     width: 80%;
     height: 90%;
@@ -21,30 +21,30 @@ input:checked ~ section article .catsCard
     margin: 0;
 }
 
-input:checked ~ section article:not(:first-child) .catsCard
+input:checked ~ article section:not(:first-child) .cat-card
 {
     border-top: none;
 }
 
-input:checked ~ section article .catsCard .photo
+input:checked ~ article section .cat-card .photo
 {
     width: 100%;
     height: 50%;
 }
 
-input:checked ~ section article .catsCard .name
+input:checked ~ article section .cat-card .name
 {
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-input:checked ~ section article .catsCard .shortDescription
+input:checked ~ article section .cat-card .short-description
 {
     display: none;
 }
 
-input:checked ~ section article .catsCard .bigDescription
+input:checked ~ article section .cat-card .big-description
 {
     display: block;
 }
@@ -55,18 +55,19 @@ label
     width: 60px;
     height: 60px;
     display: block;
+    cursor: pointer;
 }
 
-.catsCard
+.cat-card
 {
     float: left;
-    margin: 1%;
+    margin: 11px;
     width: 400px;
     height: 550px;
     border: gray solid 1px;
 }
 
-.catsCard:hover
+.cat-card:hover
 {
     box-shadow: 0 0 10px 2px gray;
 }
@@ -81,6 +82,11 @@ label
     overflow: hidden;
 }
 
+.name a
+{
+    text-decoration: none;
+}
+
 .name a:hover
 {
     color: coral;
@@ -91,30 +97,30 @@ label
     color: coral;
 }
 
-.shortDescription
+.short-description
 {
     padding-left: 15px;
 }
 
-.shortDescription p
+.short-description p
 {
     color: gray;
     margin: 0;
 }
 
-.bigDescription
+.big-description
 {
     padding-left: 15px;
     display: none;
 }
 
-.bigDescription p
+.big-description p
 {
     color: gray;
     margin: 0;
 }
 
-.shortDescription .status
+.short-description .status
 {
     margin-top: 10px;
 }
@@ -123,6 +129,7 @@ label
 {
     width: 100%;
     height: 300px;
+    cursor: pointer;
 }
 
 .photo:hover
