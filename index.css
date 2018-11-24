@@ -8,12 +8,13 @@ input
     display: none;
 }
 
-input:checked + article label
+input:checked + section label
 {
     background: url('horizontal.png');
+    margin-left: -3px;
 }
 
-input:checked ~ article section .cat-card
+input:checked ~ article .cat-card
 {
     width: 80%;
     height: 90%;
@@ -21,30 +22,30 @@ input:checked ~ article section .cat-card
     margin: 0;
 }
 
-input:checked ~ article section:not(:first-child) .cat-card
+input:checked ~ article .cat-card:not(:first-child)
 {
     border-top: none;
 }
 
-input:checked ~ article section .cat-card .photo
+input:checked ~ article .cat-card .photo
 {
     width: 100%;
     height: 50%;
 }
 
-input:checked ~ article section .cat-card .name
+input:checked ~ article .cat-card .name
 {
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-input:checked ~ article section .cat-card .short-description
+input:checked ~ article .cat-card .short-description
 {
     display: none;
 }
 
-input:checked ~ article section .cat-card .big-description
+input:checked ~ article .cat-card .big-description
 {
     display: block;
 }
